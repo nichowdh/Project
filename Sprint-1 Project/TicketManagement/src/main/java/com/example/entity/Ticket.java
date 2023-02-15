@@ -8,18 +8,22 @@ import javax.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
 @Getter
 @Setter
 @ToString
+@NoArgsConstructor
 @AllArgsConstructor
 @Builder
 @Entity
-public class Ticket {
+public class Ticket { // entity class
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
+
+	// variables
 	private int id;
 
 	private String name;
